@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Application Test Suite" tests="4" assertions="4" failures="0" errors="0" time="1.693707">
+    <testsuite name="ExampleTest" file="/home/vagrant/Code/prueba1/tests/ExampleTest.php" tests="4" assertions="4" failures="0" errors="0" time="1.693707">
+      <testcase name="testSameNumber" class="ExampleTest" file="/home/vagrant/Code/prueba1/tests/ExampleTest.php" line="14" assertions="1" time="0.886817"/>
+      <testcase name="testSameString" class="ExampleTest" file="/home/vagrant/Code/prueba1/tests/ExampleTest.php" line="19" assertions="1" time="0.259357"/>
+      <testcase name="testDifferentNumber" class="ExampleTest" file="/home/vagrant/Code/prueba1/tests/ExampleTest.php" line="24" assertions="1" time="0.304948"/>
+      <testcase name="testDifferentString" class="ExampleTest" file="/home/vagrant/Code/prueba1/tests/ExampleTest.php" line="29" assertions="1" time="0.242585"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
