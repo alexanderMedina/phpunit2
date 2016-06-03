@@ -26,9 +26,46 @@ class ExampleTest extends TestCase
         $this->assertNotEquals(1,2);
     }
 
-    public function testDifferentString()
+    public function testNulls()
     {
-        $this->assertNotEquals("holas","hola");
+        $vacio = null;
+        $this->assertEmpty($vacio);
+    }
+    public function testBoolean()
+    {
+           $this->assertNotTrue(false);
+    }
+    public function testArray1()
+    {
+        $hola = [
+            'la' => 1
+        ];
+
+        $this->assertArrayHasKey('la',$hola);
+    }
+    public function testArray2()
+    {
+        $chau = [
+            'la' => 1
+        ];
+
+        $this->assertArrayHasKey('la',$chau);
+    }
+
+    public function testObject1()
+    {
+        $x = new stdClass();
+
+        $this->assertObjectNotHasAttribute('la',$x);
+    }
+
+    public function testObject2()
+    {
+
+        $x = new stdClass();
+        $y = new stdClass();
+
+        $this->assertEquals($y,$x);
     }
 
 }
